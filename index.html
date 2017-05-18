@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <body style="padding:30px;">
+        <link rel="stylesheet" href="//cdn.bootcss.com/summernote/0.8.3/summernote.css" />
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+        <script src="//cdn.bootcss.com/summernote/0.8.3/summernote.js"></script>
+        <script src="//cdn.bootcss.com/markdown-it/8.3.1/markdown-it.min.js"></script>
+
+        <script src="./summernote-markdown.js"></script>
+
+  <p> A markdown plugin for <a href="http://summernote.org/">Summernote</a></p>
+
+  <div id="summernote">
+# Hello Summernote
+
+This is for supporting markdown.
+
+* list 1
+* list 2
+* list 3
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('#summernote').summernote({
+        height: 500,
+        toolbar : [
+          ['misc', ['markdown']]
+      ]}).on('summernote.init', function () {
+      });
+    });
+  </script>
+
+  <div style="height:500px;"></div>
+    </body>
+</html>
